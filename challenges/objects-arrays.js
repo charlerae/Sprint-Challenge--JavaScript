@@ -58,7 +58,12 @@ console.log(`The tyrannosaurus lived during the ${tyran.period} period.`);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 console.log(`The tyrannosaurus goes ${tyran.speak()}.`);
-
+console.log(velo);
+velo.speak = function() {
+  return "RAWERSRARARWERSARARARRRR!"
+}
+console.log(velo.speak());
+console.log(velo);
 
 // ==== Arrays ====
 
@@ -127,11 +132,8 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 
-let study = graduates.filter(function(ed){
-  return ed.university === "Uni";
-})
-
-uni.push(study);
+// uni.push(graduates.includes("Uni"))
+graduates.includes("Uni");
 console.log(uni);
 
 
