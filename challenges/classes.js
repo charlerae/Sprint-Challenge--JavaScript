@@ -10,8 +10,12 @@ class Cuboidmaker{
         volume() {
             return this.long * this.width * this.height;
         }
+        surfaceArea() {
+            return 2 * (this.long * this.width + this.long * this.height + this.width * this.height)
+        }
 }
 
+const cuboid = new Cuboidmaker(4, 5, 5);
 
 
 
